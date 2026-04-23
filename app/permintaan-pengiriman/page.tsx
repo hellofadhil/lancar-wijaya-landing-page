@@ -1,9 +1,25 @@
+import type { Metadata } from 'next';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Send } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Form Permintaan Pengiriman',
+  description:
+    'Ajukan permintaan pengiriman barang dengan CV Lancar Wijaya Sentosa untuk estimasi biaya, jadwal, dan kebutuhan cargo khusus.',
+  alternates: {
+    canonical: '/permintaan-pengiriman',
+  },
+  openGraph: {
+    title: 'Form Permintaan Pengiriman | CV Lancar Wijaya Sentosa',
+    description:
+      'Ajukan permintaan pengiriman barang untuk estimasi biaya, jadwal, dan kebutuhan cargo khusus.',
+    url: '/permintaan-pengiriman',
+  },
+};
 
 export default function RequestPage() {
   return (
