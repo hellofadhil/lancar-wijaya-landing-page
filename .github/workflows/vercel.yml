@@ -1,4 +1,4 @@
-name: Auto Deploy to Vercel
+name: Git CI/CD with Vercel
 
 on:
   push:
